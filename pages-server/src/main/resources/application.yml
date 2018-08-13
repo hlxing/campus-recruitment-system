@@ -1,0 +1,27 @@
+# tomcat
+server:
+  port: 666
+  servlet:
+    path: /
+
+# logback
+logging:
+  config: classpath:logback-spring.xml
+
+# spring
+spring:
+  # 模板配置
+  thymeleaf:
+    # 避免模板更改导致重启
+    cache: false
+    # 标签bug
+    mode: LEGACYHTML5
+    # 前缀
+    prefix: classpath:/static/
+    # 后缀
+    suffix: .html
+
+  # output
+  output:
+    ansi:
+      enabled: always
