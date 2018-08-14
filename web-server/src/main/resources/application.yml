@@ -1,6 +1,6 @@
 # tomcat
 server:
-  port: 8888
+  port: 2018
   servlet:
     context-path: /campus-recruitment
 
@@ -15,7 +15,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/campus_recruitment?characterEncoding=utf-8
     username: recruitment
-    password: 123456
+    password: JAS@hJpoKU+BKJqxwfQuEuy0Yg==
     # druid
     type: com.alibaba.druid.pool.DruidDataSource
     name: movieDataSource
@@ -38,7 +38,7 @@ spring:
 
 # druid-monitor
 duridMonitor:
-  password: 123456
+  password: JAS@hJpoKU+BKJqxwfQuEuy0Yg==
 
 # logback
 logging:
