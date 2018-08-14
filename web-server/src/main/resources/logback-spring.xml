@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <property name="CONSOLEPATTERN" value="%d{yyyy/MM/dd HH:mm:ss} %p : %m%n" />
-    <property name="FILEPATTERN" value="%d{yyyy/MM/dd HH:mm:ss} [%p] [%c] %m%n" />
+    <property name="CONSOLE-PATTERN" value="%d{yyyy/MM/dd HH:mm:ss} %p : %m%n" />
+    <property name="FILE-PATTERN" value="%d{yyyy/MM/dd HH:mm:ss} [%p] [%c] %m%n" />
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>${CONSOLEPATTERN}</pattern>
+            <pattern>${CONSOLE-PATTERN}</pattern>
         </encoder>
     </appender>
 
@@ -15,7 +15,7 @@
             <fileNamePattern>${user.dir}/web-server-logs/%d{yyyy-MM-dd}.log</fileNamePattern>
         </rollingPolicy>
         <encoder>
-            <pattern>${FILEPATTERN}</pattern>
+            <pattern>${FILE-PATTERN}</pattern>
         </encoder>
     </appender>
 
