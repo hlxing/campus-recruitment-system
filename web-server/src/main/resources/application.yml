@@ -1,0 +1,55 @@
+# tomcat
+server:
+  port: 8888
+  servlet:
+    context-path: /campus-recruitment
+
+
+# spring
+spring:
+  # aop
+  aop.auto: true
+  # datasource
+  datasource:
+    # mysql
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/campus_recruitment?characterEncoding=utf-8
+    username: recruitment
+    password: 123456
+    # druid
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: movieDataSource
+    druid:
+      # 连接池初始大小 最小 最大
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      # 连接等待超时
+      maxWait: 60000
+      # 检测空闲连接的时间间隔
+      timeBetweenEvictionRunsMillis: 60000
+    # stat监控统计,wall防御sql注入
+    filters: stat,wall
+
+  # output
+  output:
+    ansi:
+      enabled: always
+
+# druid-monitor
+duridMonitor:
+  password: 123456
+
+# logback
+logging:
+  config: classpath:logback-spring.xml
+
+# mybatis
+mybatis:
+  type-aliases-package: com.hlx.webserver.model
+  mapperLocations: classpath:mapper/*.xml
+
+# pageHelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true

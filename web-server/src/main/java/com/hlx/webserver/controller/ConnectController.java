@@ -21,7 +21,7 @@ public class ConnectController {
     public ApiResponse<String> test(){
         ApiResponse<String> apiResponse = new ApiResponse<>();
         apiResponse.setText("Connect Success");
-        logger.info("测试接成功");
+        logger.info("测试连接成功!");
         return apiResponse;
     }
 
