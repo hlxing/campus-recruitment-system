@@ -17,7 +17,7 @@ spring:
     # 标签bug
     mode: LEGACYHTML5
     # 前缀
-    prefix: classpath:/static/
+    prefix: classpath:/pages/
     # 后缀
     suffix: .html
 
