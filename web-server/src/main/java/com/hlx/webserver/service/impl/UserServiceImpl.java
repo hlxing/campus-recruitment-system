@@ -3,6 +3,7 @@ package com.hlx.webserver.service.impl;
 import com.hlx.webserver.dao.UserDao;
 import com.hlx.webserver.model.User;
 import com.hlx.webserver.service.UserService;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public boolean login(User user) {
         User rightUser = userDao.getByName(user.getName());
-        return rightUser != null && rightUser.getPassword().equals(user.getPassword());
+        String encryptedPass = DigestUtils.sha1Hex(user.getPassword());
+        return rightUser != null && rightUser.getPassword().equals(encryptedPass);
     }
 }
