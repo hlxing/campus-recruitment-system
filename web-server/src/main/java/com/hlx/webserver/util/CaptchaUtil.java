@@ -17,9 +17,8 @@ public class CaptchaUtil {
             'た','ά','気','か','い','は','す'};
 
     //验证字符序列
-    private static char[] targetSeq = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-            'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
-            'X', 'Y', 'Z'};
+    private static char[] targetSeq = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'K', 'L', 'M',
+            'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
     //噪声字体
     private static Font noiseFont = new Font("微软雅黑", Font.BOLD, 20);
