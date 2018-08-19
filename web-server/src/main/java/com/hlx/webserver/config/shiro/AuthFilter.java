@@ -1,0 +1,53 @@
+package com.hlx.webserver.config.shiro;
+
+import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+/**
+ * @description: 认证拦截器,拦截认证请求
+ * @author: hlx 2018-08-19
+ **/
+public class AuthFilter extends BasicHttpAuthenticationFilter{
+
+    private static final Logger logger = LoggerFactory.getLogger(AuthFilter.class);
+
+    //检测请求是否需要鉴权(用户登录判断)
+    @Override
+    protected boolean isLoginAttempt(ServletRequest request, ServletResponse response) {
+        HttpServletRequest req = (HttpServletRequest) request;
+        String authorization = req.getHeader("S-TOKEN");
+        logger.info("需要鉴权->>"+ (authorization != null));
+        return authorization != null;
+    }
+
+    //执行登录判断逻辑
+    @Override
+    protected boolean executeLogin(ServletRequest request, ServletResponse response) throws Exception {
+        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
+        HttpSession httpSession = httpServletRequest.getSession();
+        AuthToken authToken = new AuthToken(httpSession);
+        //登录判断,错误则抛出异常
+        getSubject(request, response).login(authToken);
+        logger.info("token->>" + authToken + "正在登录");
+        return true;
+    }
+
+    @Override
+    protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
+        if (isLoginAttempt(request, response)) {
+            try {
+                executeLogin(request, response);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return true;
+    }
+
+}
