@@ -9,6 +9,15 @@ server:
 spring:
   # aop
   aop.auto: true
+  # session
+  session:
+    store-type: redis
+    timeout: 7200
+  # redis
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
   # datasource
   datasource:
     # mysql
@@ -20,15 +29,15 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     name: movieDataSource
     druid:
-      # Á¬½Ó³Ø³õÊ¼´óĞ¡ ×îĞ¡ ×î´ó
+      # è¿æ¥æ± åˆå§‹å¤§å° æœ€å° æœ€å¤§
       initialSize: 5
       minIdle: 5
       maxActive: 20
-      # Á¬½ÓµÈ´ı³¬Ê±
+      # è¿æ¥ç­‰å¾…è¶…æ—¶
       maxWait: 60000
-      # ¼ì²â¿ÕÏĞÁ¬½ÓµÄÊ±¼ä¼ä¸ô
+      # æ£€æµ‹ç©ºé—²è¿æ¥çš„æ—¶é—´é—´éš”
       timeBetweenEvictionRunsMillis: 60000
-    # stat¼à¿ØÍ³¼Æ,wall·ÀÓùsql×¢Èë
+    # statç›‘æ§ç»Ÿè®¡,wallé˜²å¾¡sqlæ³¨å…¥
     filters: stat,wall
 
   # output
