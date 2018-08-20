@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<select id="getByName" resultType="User" parameterType="String">
 		select 
-			name,password
+			id,name,password
 		from user
 		where name=#{name}
 	</select>
