@@ -3,8 +3,6 @@ package com.hlx.webserver.config.shiro;
 import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
 import org.apache.shiro.mgt.DefaultSubjectDAO;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
-import org.apache.shiro.spring.web.config.DefaultShiroFilterChainDefinition;
-import org.apache.shiro.spring.web.config.ShiroFilterChainDefinition;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.session.mgt.ServletContainerSessionManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
@@ -22,6 +20,7 @@ import java.util.Map;
 @Configuration
 public class ShiroConfig {
 
+    // 注册管理器
     @Bean(name = "securityManager")
     public DefaultWebSecurityManager defaultWebSecurityManager(AuthService authService) {
         DefaultWebSecurityManager manager = new DefaultWebSecurityManager();
@@ -38,35 +37,28 @@ public class ShiroConfig {
         return manager;
     }
 
-//    @Bean
-//    public ShiroFilterChainDefinition shiroFilterChainDefinition() {
-//        DefaultShiroFilterChainDefinition chain = new DefaultShiroFilterChainDefinition();
-//        //哪些请求可以匿名访问
-//        chain.addPathDefinition("/user/login", "anon");
-//        //除了以上的请求外，其它请求都需要登录
-//        chain.addPathDefinition("/**", "authc");
-//        return chain;
-//    }
-
-    @Bean("shiroFilter")
+    // 注册拦截器
+    @Bean(name = "shiroFilter")
     public ShiroFilterFactoryBean factory(DefaultWebSecurityManager securityManager) {
         ShiroFilterFactoryBean factoryBean = new ShiroFilterFactoryBean();
-
-        // 添加自己的过滤器并且取名为authFilter
+        // 设置登录页,未登录时将自动跳转,采用error映射
+        factoryBean.setLoginUrl("/error");
+        // 添加自定义的拦截器authFilter,用于自定义登录处理逻辑
         Map<String, Filter> filterMap = new HashMap<>();
         filterMap.put("authFilter", new AuthFilter());
         factoryBean.setFilters(filterMap);
-
         factoryBean.setSecurityManager(securityManager);
         Map<String, String> filterRuleMap = new HashMap<>();
-        // 所有请求通过authFilter
+        // 匿名访问接口
         filterRuleMap.put("/user/login", "anon");
         filterRuleMap.put("/connect/test", "anon");
-        filterRuleMap.put("/**", "authFilter");
+        // 需要登录的接口
+        filterRuleMap.put("/**", "authc,authFilter");
         factoryBean.setFilterChainDefinitionMap(filterRuleMap);
         return factoryBean;
     }
 
+    // 解决BUG
     @Bean
     public static DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator() {
         DefaultAdvisorAutoProxyCreator creator = new DefaultAdvisorAutoProxyCreator();

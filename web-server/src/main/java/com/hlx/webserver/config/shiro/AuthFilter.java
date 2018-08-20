@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 /**
- * @description: 认证拦截器,拦截认证请求
+ * @description: 认证拦截器,拦截登录请求,自定义登录逻辑
  * @author: hlx 2018-08-19
  **/
 public class AuthFilter extends BasicHttpAuthenticationFilter{
@@ -30,7 +30,8 @@ public class AuthFilter extends BasicHttpAuthenticationFilter{
     @Override
     protected boolean executeLogin(ServletRequest request, ServletResponse response) throws Exception {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-        HttpSession httpSession = httpServletRequest.getSession();
+        // 获取session,且不自动创建
+        HttpSession httpSession = httpServletRequest.getSession(false);
         AuthToken authToken = new AuthToken(httpSession);
         //登录判断,错误则抛出异常
         getSubject(request, response).login(authToken);
@@ -38,6 +39,7 @@ public class AuthFilter extends BasicHttpAuthenticationFilter{
         return true;
     }
 
+    //不阻挡所有请求，请求的最终合法性由接口上的注解判断
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
         if (isLoginAttempt(request, response)) {
