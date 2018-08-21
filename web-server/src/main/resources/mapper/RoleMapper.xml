@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hlx.webserver.dao.RoleDao">
+
+
+	<select id="getByUserId" resultType="Role" parameterType="Integer">
+		select 
+			role.id,role.name
+		from
+			role,user_role
+		where
+			user_role.userId = #{userId}
+			and role.id = user_role.roleId
+	</select>
+
+
+
+</mapper>  

@@ -1,5 +1,6 @@
 package com.hlx.webserver.config.shiro;
 
+import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 
 import org.slf4j.Logger;
@@ -32,6 +33,10 @@ public class AuthFilter extends BasicHttpAuthenticationFilter{
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         // 获取session,且不自动创建
         HttpSession httpSession = httpServletRequest.getSession(false);
+        // 无session代表请求头无session标志,或者该session标志无效(过期/错误)
+        if (httpSession == null) {
+            throw new AuthenticationException("Invalid Session");
+        }
         AuthToken authToken = new AuthToken(httpSession);
         //登录判断,错误则抛出异常
         getSubject(request, response).login(authToken);
