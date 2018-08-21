@@ -54,22 +54,25 @@ public class UserController {
             if (session == null || sessionRepository.findById(session.getId()) == null) {
                 // 通过user.id进一步获取session.id
                 String sessionId = (String) template.opsForHash().get("sessionMap", userId);
-                // 查找历史session,试图复用
+                // 查找历史session,检测是否过期
                 if (sessionId != null) {
                     Session redisSession = sessionRepository.findById(sessionId);
-                    Instant creationTime = redisSession.getCreationTime();
-                    Instant now = Instant.now();
-                    // 还有1小时的有效期,则复用sessionId
-                    if (now.getEpochSecond() - creationTime.getEpochSecond() <= 3600) {
-                        response.setHeader("S-TOKEN",redisSession.getId());
-                        reuseSuccess = true;
-                        logger.info("session reuse success");
+                    if (redisSession != null) {
+                        Instant creationTime = redisSession.getCreationTime();
+                        Instant now = Instant.now();
+                        // 还有1小时的有效期,则复用sessionId
+                        if (now.getEpochSecond() - creationTime.getEpochSecond() <= 3600) {
+                            response.setHeader("S-TOKEN",redisSession.getId());
+                            reuseSuccess = true;
+                            logger.info("session reuse success");
+                        }
                     }
                 }
             }
             // 如果复用失败,则重新创建,并加入sessionMap
             if (!reuseSuccess) {
                 HttpSession newSession = request.getSession(true);
+                newSession.setAttribute("userId",userId);
                 template.opsForHash().put("sessionMap", userId, newSession.getId());
                 logger.info("new session");
             }
