@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '@/components/test'
+import HomePage from '@/components/homepage'
 
 Vue.use(Router)
 
