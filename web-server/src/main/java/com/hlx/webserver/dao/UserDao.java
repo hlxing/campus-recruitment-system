@@ -11,4 +11,6 @@ import org.springframework.stereotype.Repository;
 public interface UserDao {
 
     User getByName(String name);
+
+    User getByEmail(String email);
 }
