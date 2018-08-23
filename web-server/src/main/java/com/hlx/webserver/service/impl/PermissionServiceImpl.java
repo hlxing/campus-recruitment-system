@@ -1,7 +1,7 @@
 package com.hlx.webserver.service.impl;
 
 import com.hlx.webserver.dao.PermissionDao;
-import com.hlx.webserver.model.Permission;
+import com.hlx.webserver.model.po.Permission;
 import com.hlx.webserver.service.PermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

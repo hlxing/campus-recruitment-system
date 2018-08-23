@@ -1,6 +1,6 @@
 package com.hlx.webserver;
 
-import com.hlx.webserver.model.Captcha;
+import com.hlx.webserver.model.po.Captcha;
 import com.hlx.webserver.util.CaptchaUtil;
 import org.junit.Test;
 

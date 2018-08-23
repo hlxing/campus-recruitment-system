@@ -8,7 +8,6 @@ import org.apache.shiro.web.session.mgt.ServletContainerSessionManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import javax.servlet.Filter;
 import java.util.HashMap;
 import java.util.Map;
@@ -49,11 +48,15 @@ public class ShiroConfig {
         factoryBean.setFilters(filterMap);
         factoryBean.setSecurityManager(securityManager);
         Map<String, String> filterRuleMap = new HashMap<>();
-        // 匿名访问接口
-        filterRuleMap.put("/user/login", "anon");
-        filterRuleMap.put("/connect/test", "anon");
-        // 需要登录的接口
-        filterRuleMap.put("/**", "authc,authFilter");
+
+        // 调试专用
+        filterRuleMap.put("/**", "anon");
+
+//        // 匿名访问接口
+//        filterRuleMap.put("/user/login", "anon");
+//        filterRuleMap.put("/connect/test", "anon");
+//        // 需要登录的接口
+//        filterRuleMap.put("/**", "authc,authFilter");
         factoryBean.setFilterChainDefinitionMap(filterRuleMap);
         return factoryBean;
     }

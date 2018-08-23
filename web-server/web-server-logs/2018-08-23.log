@@ -1,0 +1,1117 @@
+2018/08/23 18:35:19 [INFO] [com.hlx.webserver.SwaggerTests] Starting SwaggerTests on MSI with PID 14400 (started by 60377 in C:\Users\60377\campus-recruitment-system\web-server)
+2018/08/23 18:35:19 [INFO] [com.hlx.webserver.SwaggerTests] No active profile set, falling back to default profiles: default
+2018/08/23 18:35:19 [INFO] [org.springframework.web.context.support.GenericWebApplicationContext] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@a4add54: startup date [Thu Aug 23 18:35:19 CST 2018]; root of context hierarchy
+2018/08/23 18:35:22 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018/08/23 18:35:22 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'sessionEventHttpSessionListenerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:35:22 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'springSessionRepositoryFilter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor] Post-processing PropertySource instances
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:23 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$6e0fa1c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:23 [INFO] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5af6c418] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$70a2e06d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'shiroConfig' of type [com.hlx.webserver.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$1b1a5085] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'jasyptConfig' of type [com.hlx.webserver.config.JasyptConfig$$EnhancerBySpringCGLIB$$9a038cae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'encryptablePropertyResolver' of type [com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver] Found Custom Resolver Bean com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver@765d55d5 with name: encryptablePropertyResolver
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$8dcb1548] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidConfig' of type [com.hlx.webserver.config.DruidConfig$$EnhancerBySpringCGLIB$$aea33c93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:24 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionServiceImpl' of type [com.hlx.webserver.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [com.sun.proxy.$Proxy102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleServiceImpl' of type [com.hlx.webserver.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authService' of type [com.hlx.webserver.config.shiro.AuthService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$ef6abf22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$7f75c87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txConfig' of type [com.hlx.webserver.config.TxConfig$$EnhancerBySpringCGLIB$$3a7264b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:25 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test2],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test2()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test3],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test3()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test4],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test4()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.PageErrorController.error()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/register],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.register(com.hlx.webserver.model.dto.RegisterDTO)
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/login],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.login(com.hlx.webserver.model.dto.LoginDTO,javax.servlet.http.HttpServletRequest)
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/emailCaptcha/{email}],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.mailCaptcha(java.lang.String)
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018/08/23 18:35:28 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018/08/23 18:35:28 [INFO] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018/08/23 18:35:29 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:35:29 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@a4add54: startup date [Thu Aug 23 18:35:19 CST 2018]; root of context hierarchy
+2018/08/23 18:35:30 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:35:30 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:35:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] Detected @ExceptionHandler methods in apiExceptionResolver
+2018/08/23 18:35:31 [INFO] [io.lettuce.core.EpollProvider] Starting without optional epoll library
+2018/08/23 18:35:31 [INFO] [io.lettuce.core.KqueueProvider] Starting without optional kqueue library
+2018/08/23 18:35:31 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2018/08/23 18:35:31 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Context refreshed
+2018/08/23 18:35:32 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Found 1 custom documentation plugin(s)
+2018/08/23 18:35:32 [INFO] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] Scanning for api listing references
+2018/08/23 18:35:32 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018/08/23 18:35:32 [INFO] [com.hlx.webserver.SwaggerTests] Started SwaggerTests in 14.481 seconds (JVM running for 17.324)
+2018/08/23 18:35:33 [INFO] [io.swagger.parser.Swagger20Parser] reading from http://localhost:8080/campus-recruitment/v2/api-docs
+2018/08/23 18:35:34 [ERROR] [io.swagger.parser.util.RemoteUrl] unable to read
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.Swagger20Parser.read(Swagger20Parser.java:81)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:64)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:35:35 [ERROR] [io.swagger.parser.util.RemoteUrl] unable to read
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:186)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:116)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:72)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:35:35 [ERROR] [io.swagger.parser.SwaggerCompatConverter] failed to read resource listing
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:186)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:116)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:72)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:35:35 [INFO] [io.swagger.parser.Swagger20Parser] reading from http://localhost:8080/campus-recruitment/v2/api-docs
+2018/08/23 18:35:36 [ERROR] [io.swagger.parser.util.RemoteUrl] unable to read
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.Swagger20Parser.read(Swagger20Parser.java:81)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:72)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:35:36 [INFO] [org.springframework.web.context.support.GenericWebApplicationContext] Closing org.springframework.web.context.support.GenericWebApplicationContext@a4add54: startup date [Thu Aug 23 18:35:19 CST 2018]; root of context hierarchy
+2018/08/23 18:35:36 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Stopping beans in phase 2147483647
+2018/08/23 18:35:56 [INFO] [com.hlx.webserver.SwaggerTests] Starting SwaggerTests on MSI with PID 7644 (started by 60377 in C:\Users\60377\campus-recruitment-system\web-server)
+2018/08/23 18:35:56 [INFO] [com.hlx.webserver.SwaggerTests] No active profile set, falling back to default profiles: default
+2018/08/23 18:35:56 [INFO] [org.springframework.web.context.support.GenericWebApplicationContext] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@a4add54: startup date [Thu Aug 23 18:35:56 CST 2018]; root of context hierarchy
+2018/08/23 18:35:58 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018/08/23 18:35:58 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'sessionEventHttpSessionListenerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:35:58 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'springSessionRepositoryFilter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor] Post-processing PropertySource instances
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:35:59 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$7bc74846] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:59 [INFO] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018/08/23 18:35:59 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$68ae6a96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:59 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$7e5a86eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:35:59 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'shiroConfig' of type [com.hlx.webserver.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$28d1f703] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'jasyptConfig' of type [com.hlx.webserver.config.JasyptConfig$$EnhancerBySpringCGLIB$$a7bb332c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'encryptablePropertyResolver' of type [com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver] Found Custom Resolver Bean com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver@3d1f558a with name: encryptablePropertyResolver
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9b82bbc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidConfig' of type [com.hlx.webserver.config.DruidConfig$$EnhancerBySpringCGLIB$$bc5ae311] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionServiceImpl' of type [com.hlx.webserver.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [com.sun.proxy.$Proxy102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleServiceImpl' of type [com.hlx.webserver.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:00 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authService' of type [com.hlx.webserver.config.shiro.AuthService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$fd2265a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$15af0305] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txConfig' of type [com.hlx.webserver.config.TxConfig$$EnhancerBySpringCGLIB$$482a0b2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:01 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test3],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test3()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test2],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test2()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test4],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test4()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.PageErrorController.error()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/register],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.register(com.hlx.webserver.model.dto.RegisterDTO)
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/login],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.login(com.hlx.webserver.model.dto.LoginDTO,javax.servlet.http.HttpServletRequest)
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/emailCaptcha/{email}],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.mailCaptcha(java.lang.String)
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018/08/23 18:36:03 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018/08/23 18:36:03 [INFO] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018/08/23 18:36:04 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:36:04 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@a4add54: startup date [Thu Aug 23 18:35:56 CST 2018]; root of context hierarchy
+2018/08/23 18:36:04 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:36:04 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:36:04 [INFO] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] Detected @ExceptionHandler methods in apiExceptionResolver
+2018/08/23 18:36:05 [INFO] [io.lettuce.core.EpollProvider] Starting without optional epoll library
+2018/08/23 18:36:05 [INFO] [io.lettuce.core.KqueueProvider] Starting without optional kqueue library
+2018/08/23 18:36:06 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2018/08/23 18:36:06 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Context refreshed
+2018/08/23 18:36:06 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Found 1 custom documentation plugin(s)
+2018/08/23 18:36:06 [INFO] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] Scanning for api listing references
+2018/08/23 18:36:07 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018/08/23 18:36:07 [INFO] [com.hlx.webserver.SwaggerTests] Started SwaggerTests in 12.139 seconds (JVM running for 14.052)
+2018/08/23 18:36:07 [INFO] [io.swagger.parser.Swagger20Parser] reading from http://localhost:2018/campus-recruitment/v2/api-docs
+2018/08/23 18:36:08 [ERROR] [io.swagger.parser.util.RemoteUrl] unable to read
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.Swagger20Parser.read(Swagger20Parser.java:81)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:64)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:36:09 [ERROR] [io.swagger.parser.util.RemoteUrl] unable to read
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:186)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:116)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:72)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:36:09 [ERROR] [io.swagger.parser.SwaggerCompatConverter] failed to read resource listing
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:186)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:116)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:72)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:36:09 [INFO] [io.swagger.parser.Swagger20Parser] reading from http://localhost:2018/campus-recruitment/v2/api-docs
+2018/08/23 18:36:10 [ERROR] [io.swagger.parser.util.RemoteUrl] unable to read
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at io.swagger.parser.util.RemoteUrl.urlToString(RemoteUrl.java:133)
+	at io.swagger.parser.Swagger20Parser.read(Swagger20Parser.java:81)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:72)
+	at io.swagger.parser.SwaggerParser.read(SwaggerParser.java:52)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.readSwagger(Swagger2MarkupConverter.java:321)
+	at io.github.swagger2markup.Swagger2MarkupConverter$Builder.<init>(Swagger2MarkupConverter.java:291)
+	at io.github.swagger2markup.Swagger2MarkupConverter.from(Swagger2MarkupConverter.java:95)
+	at com.hlx.webserver.SwaggerTests.createMarkdown(SwaggerTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018/08/23 18:36:10 [INFO] [org.springframework.web.context.support.GenericWebApplicationContext] Closing org.springframework.web.context.support.GenericWebApplicationContext@a4add54: startup date [Thu Aug 23 18:35:56 CST 2018]; root of context hierarchy
+2018/08/23 18:36:10 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Stopping beans in phase 2147483647
+2018/08/23 18:37:14 [INFO] [com.hlx.webserver.SwaggerTests] Starting SwaggerTests on MSI with PID 18712 (started by 60377 in C:\Users\60377\campus-recruitment-system\web-server)
+2018/08/23 18:37:14 [INFO] [com.hlx.webserver.SwaggerTests] No active profile set, falling back to default profiles: default
+2018/08/23 18:37:14 [INFO] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@265adfad: startup date [Thu Aug 23 18:37:14 CST 2018]; root of context hierarchy
+2018/08/23 18:37:16 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018/08/23 18:37:16 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'sessionEventHttpSessionListenerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:37:16 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'springSessionRepositoryFilter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:37:16 [INFO] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor] Post-processing PropertySource instances
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$ba10ee1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a6f8106a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$bca42cbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'shiroConfig' of type [com.hlx.webserver.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$671b9cd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'jasyptConfig' of type [com.hlx.webserver.config.JasyptConfig$$EnhancerBySpringCGLIB$$e604d900] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'encryptablePropertyResolver' of type [com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver] Found Custom Resolver Bean com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver@7da31a40 with name: encryptablePropertyResolver
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:17 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d9cc619a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidConfig' of type [com.hlx.webserver.config.DruidConfig$$EnhancerBySpringCGLIB$$faa488e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionServiceImpl' of type [com.hlx.webserver.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [com.sun.proxy.$Proxy102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleServiceImpl' of type [com.hlx.webserver.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authService' of type [com.hlx.webserver.config.shiro.AuthService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:18 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$3b6c0b74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$53f8a8d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txConfig' of type [com.hlx.webserver.config.TxConfig$$EnhancerBySpringCGLIB$$8673b103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:19 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:20 [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 2018 (http)
+2018/08/23 18:37:20 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:20 [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2018/08/23 18:37:20 [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.32
+2018/08/23 18:37:20 [INFO] [org.apache.catalina.core.AprLifecycleListener] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\maven\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;D:\cmder;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322.;D:\Chrome下载\ikvmbin-8.1.5717.0\ikvm-8.1.5717.0\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\redis;C:\Users\60377\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\60377\AppData\Local\Programs\Python\Python36\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\60377\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin;;C:\Program Files\Microsoft VS Code\bin;C:\Users\60377\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;.]
+2018/08/23 18:37:20 [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/campus-recruitment]] Initializing Spring embedded WebApplicationContext
+2018/08/23 18:37:20 [INFO] [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 6543 ms
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'webStatFilter' to urls: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.RegistrationBean] Filter webStatFilter was not registered (possibly already registered?)
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'shiroFilter' to: [/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet statViewServlet mapped to [/druid/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet statViewServlet mapped to [/druid/*]
+2018/08/23 18:37:21 [INFO] [org.springframework.boot.web.servlet.RegistrationBean] Servlet statViewServlet was not registered (possibly already registered?)
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test2],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test2()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test3],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test3()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test4],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test4()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.PageErrorController.error()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/register],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.register(com.hlx.webserver.model.dto.RegisterDTO)
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/login],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.login(com.hlx.webserver.model.dto.LoginDTO,javax.servlet.http.HttpServletRequest)
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/emailCaptcha/{email}],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.mailCaptcha(java.lang.String)
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018/08/23 18:37:22 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018/08/23 18:37:23 [INFO] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018/08/23 18:37:23 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:37:23 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@265adfad: startup date [Thu Aug 23 18:37:14 CST 2018]; root of context hierarchy
+2018/08/23 18:37:23 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:37:23 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:37:23 [INFO] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] Detected @ExceptionHandler methods in apiExceptionResolver
+2018/08/23 18:37:25 [INFO] [io.lettuce.core.EpollProvider] Starting without optional epoll library
+2018/08/23 18:37:25 [INFO] [io.lettuce.core.KqueueProvider] Starting without optional kqueue library
+2018/08/23 18:37:26 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2018/08/23 18:37:26 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Context refreshed
+2018/08/23 18:37:26 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Found 1 custom documentation plugin(s)
+2018/08/23 18:37:26 [INFO] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] Scanning for api listing references
+2018/08/23 18:37:26 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018/08/23 18:37:26 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:26 [ERROR] [org.apache.catalina.core.StandardService] Failed to start connector [Connector[HTTP/1.1-2018]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-2018]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 38 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 39 common frames omitted
+2018/08/23 18:37:26 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:26 [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+2018/08/23 18:37:26 [INFO] [org.apache.catalina.util.LifecycleBase] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018/08/23 18:37:26 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:26 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Destroying ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:26 [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018/08/23 18:37:26 [ERROR] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 2018 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 2018, or configure this application to listen on another port.
+
+2018/08/23 18:37:26 [INFO] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@265adfad: startup date [Thu Aug 23 18:37:14 CST 2018]; root of context hierarchy
+2018/08/23 18:37:26 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Stopping beans in phase 2147483647
+2018/08/23 18:37:27 [INFO] [com.hlx.webserver.SwaggerTests] Starting SwaggerTests on MSI with PID 18712 (started by 60377 in C:\Users\60377\campus-recruitment-system\web-server)
+2018/08/23 18:37:27 [INFO] [com.hlx.webserver.SwaggerTests] No active profile set, falling back to default profiles: default
+2018/08/23 18:37:27 [INFO] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7be62956: startup date [Thu Aug 23 18:37:27 CST 2018]; root of context hierarchy
+2018/08/23 18:37:28 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018/08/23 18:37:28 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'sessionEventHttpSessionListenerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:37:28 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'springSessionRepositoryFilter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor] Post-processing PropertySource instances
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$ba10ee1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a6f8106a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$bca42cbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'shiroConfig' of type [com.hlx.webserver.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$671b9cd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'jasyptConfig' of type [com.hlx.webserver.config.JasyptConfig$$EnhancerBySpringCGLIB$$e604d900] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'encryptablePropertyResolver' of type [com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver] Found Custom Resolver Bean com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver@2914a328 with name: encryptablePropertyResolver
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d9cc619a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:28 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidConfig' of type [com.hlx.webserver.config.DruidConfig$$EnhancerBySpringCGLIB$$faa488e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionServiceImpl' of type [com.hlx.webserver.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [com.sun.proxy.$Proxy102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleServiceImpl' of type [com.hlx.webserver.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authService' of type [com.hlx.webserver.config.shiro.AuthService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$3b6c0b74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$53f8a8d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txConfig' of type [com.hlx.webserver.config.TxConfig$$EnhancerBySpringCGLIB$$8673b103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 2018 (http)
+2018/08/23 18:37:29 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:29 [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2018/08/23 18:37:29 [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.32
+2018/08/23 18:37:29 [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/campus-recruitment]] Initializing Spring embedded WebApplicationContext
+2018/08/23 18:37:29 [INFO] [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 1795 ms
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'webStatFilter' to urls: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.RegistrationBean] Filter webStatFilter was not registered (possibly already registered?)
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'shiroFilter' to: [/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet statViewServlet mapped to [/druid/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet statViewServlet mapped to [/druid/*]
+2018/08/23 18:37:29 [INFO] [org.springframework.boot.web.servlet.RegistrationBean] Servlet statViewServlet was not registered (possibly already registered?)
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test2],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test2()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test3],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test3()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test4],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test4()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.PageErrorController.error()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/register],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.register(com.hlx.webserver.model.dto.RegisterDTO)
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/login],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.login(com.hlx.webserver.model.dto.LoginDTO,javax.servlet.http.HttpServletRequest)
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/emailCaptcha/{email}],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.mailCaptcha(java.lang.String)
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018/08/23 18:37:30 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018/08/23 18:37:30 [INFO] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018/08/23 18:37:31 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:37:31 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7be62956: startup date [Thu Aug 23 18:37:27 CST 2018]; root of context hierarchy
+2018/08/23 18:37:31 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:37:31 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:37:31 [INFO] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] Detected @ExceptionHandler methods in apiExceptionResolver
+2018/08/23 18:37:32 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2018/08/23 18:37:32 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Context refreshed
+2018/08/23 18:37:32 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Found 1 custom documentation plugin(s)
+2018/08/23 18:37:32 [INFO] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] Scanning for api listing references
+2018/08/23 18:37:32 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018/08/23 18:37:32 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:32 [ERROR] [org.apache.catalina.core.StandardService] Failed to start connector [Connector[HTTP/1.1-2018]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-2018]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 37 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 38 common frames omitted
+2018/08/23 18:37:32 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:32 [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+2018/08/23 18:37:32 [INFO] [org.apache.catalina.util.LifecycleBase] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018/08/23 18:37:32 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:32 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Destroying ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:37:32 [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018/08/23 18:37:32 [ERROR] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 2018 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 2018, or configure this application to listen on another port.
+
+2018/08/23 18:37:32 [INFO] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7be62956: startup date [Thu Aug 23 18:37:27 CST 2018]; root of context hierarchy
+2018/08/23 18:37:32 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Stopping beans in phase 2147483647
+2018/08/23 18:37:33 [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6497b078] to prepare test instance [com.hlx.webserver.SwaggerTests@5fd4f8f5]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 2018 failed to start
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.checkThatConnectorsHaveStarted(TomcatWebServer.java:228)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:203)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 25 common frames omitted
+2018/08/23 18:38:01 [INFO] [com.hlx.webserver.SwaggerTests] Starting SwaggerTests on MSI with PID 14232 (started by 60377 in C:\Users\60377\campus-recruitment-system\web-server)
+2018/08/23 18:38:01 [INFO] [com.hlx.webserver.SwaggerTests] No active profile set, falling back to default profiles: default
+2018/08/23 18:38:01 [INFO] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a1a14a4: startup date [Thu Aug 23 18:38:01 CST 2018]; root of context hierarchy
+2018/08/23 18:38:03 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018/08/23 18:38:03 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'sessionEventHttpSessionListenerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionEventHttpSessionListenerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:38:03 [INFO] [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'springSessionRepositoryFilter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/session/config/annotation/web/http/SpringHttpSessionConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=springSessionRepositoryFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor] Post-processing PropertySource instances
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter] Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018/08/23 18:38:04 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$9a218b82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:04 [INFO] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8708add2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$9cb4ca27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'shiroConfig' of type [com.hlx.webserver.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$472c3a3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'jasyptConfig' of type [com.hlx.webserver.config.JasyptConfig$$EnhancerBySpringCGLIB$$c6157668] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'encryptablePropertyResolver' of type [com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver] Found Custom Resolver Bean com.hlx.webserver.config.JasyptConfig$MyEncryptablePropertyResolver@f1f7db2 with name: encryptablePropertyResolver
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b9dcff02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidConfig' of type [com.hlx.webserver.config.DruidConfig$$EnhancerBySpringCGLIB$$dab5264d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'druidDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:05 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionDao' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'permissionServiceImpl' of type [com.hlx.webserver.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleDao' of type [com.sun.proxy.$Proxy102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'roleServiceImpl' of type [com.hlx.webserver.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authService' of type [com.hlx.webserver.config.shiro.AuthService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$1b7ca8dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$34094641] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txConfig' of type [com.hlx.webserver.config.TxConfig$$EnhancerBySpringCGLIB$$66844e6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:06 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018/08/23 18:38:07 [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 2018 (http)
+2018/08/23 18:38:07 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:38:07 [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2018/08/23 18:38:07 [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.32
+2018/08/23 18:38:07 [INFO] [org.apache.catalina.core.AprLifecycleListener] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\maven\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;D:\cmder;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322.;D:\Chrome下载\ikvmbin-8.1.5717.0\ikvm-8.1.5717.0\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\redis;C:\Users\60377\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\60377\AppData\Local\Programs\Python\Python36\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\60377\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin;;C:\Program Files\Microsoft VS Code\bin;C:\Users\60377\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;.]
+2018/08/23 18:38:07 [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/campus-recruitment]] Initializing Spring embedded WebApplicationContext
+2018/08/23 18:38:07 [INFO] [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 6456 ms
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'webStatFilter' to urls: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.RegistrationBean] Filter webStatFilter was not registered (possibly already registered?)
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'shiroFilter' to: [/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet statViewServlet mapped to [/druid/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet statViewServlet mapped to [/druid/*]
+2018/08/23 18:38:08 [INFO] [org.springframework.boot.web.servlet.RegistrationBean] Servlet statViewServlet was not registered (possibly already registered?)
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test2],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test2()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test4],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test4()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/connect/test3],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.ConnectController.test3()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.PageErrorController.error()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/register],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.register(com.hlx.webserver.model.dto.RegisterDTO)
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/login],methods=[POST]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.login(com.hlx.webserver.model.dto.LoginDTO,javax.servlet.http.HttpServletRequest)
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/user/emailCaptcha/{email}],methods=[GET]}" onto public com.hlx.webserver.model.po.ApiResponse<java.lang.String> com.hlx.webserver.controller.UserController.mailCaptcha(java.lang.String)
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018/08/23 18:38:10 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018/08/23 18:38:11 [INFO] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018/08/23 18:38:11 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:38:12 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a1a14a4: startup date [Thu Aug 23 18:38:01 CST 2018]; root of context hierarchy
+2018/08/23 18:38:12 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:38:12 [INFO] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/08/23 18:38:12 [INFO] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] Detected @ExceptionHandler methods in apiExceptionResolver
+2018/08/23 18:38:14 [INFO] [io.lettuce.core.EpollProvider] Starting without optional epoll library
+2018/08/23 18:38:14 [INFO] [io.lettuce.core.KqueueProvider] Starting without optional kqueue library
+2018/08/23 18:38:16 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2018/08/23 18:38:16 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Context refreshed
+2018/08/23 18:38:16 [INFO] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] Found 1 custom documentation plugin(s)
+2018/08/23 18:38:16 [INFO] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] Scanning for api listing references
+2018/08/23 18:38:17 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018/08/23 18:38:17 [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-2018"]
+2018/08/23 18:38:17 [INFO] [org.apache.tomcat.util.net.NioSelectorPool] Using a shared selector for servlet write/read
+2018/08/23 18:38:17 [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 2018 (http) with context path '/campus-recruitment'
+2018/08/23 18:38:17 [INFO] [com.hlx.webserver.SwaggerTests] Started SwaggerTests in 17.42 seconds (JVM running for 19.267)
+2018/08/23 18:38:17 [INFO] [io.swagger.parser.Swagger20Parser] reading from http://localhost:2018/campus-recruitment/v2/api-docs
+2018/08/23 18:38:18 [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/campus-recruitment]] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018/08/23 18:38:18 [INFO] [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization started
+2018/08/23 18:38:18 [INFO] [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization completed in 67 ms
+2018/08/23 18:38:19 [INFO] [io.github.swagger2markup.markup.builder.internal.markdown.MarkdownBuilder] Markup document written to: src\docs\markdown\generated\all\overview.md
+2018/08/23 18:38:19 [INFO] [io.github.swagger2markup.markup.builder.internal.markdown.MarkdownBuilder] Markup document written to: src\docs\markdown\generated\all\paths.md
+2018/08/23 18:38:19 [INFO] [io.github.swagger2markup.markup.builder.internal.markdown.MarkdownBuilder] Markup document written to: src\docs\markdown\generated\all\definitions.md
+2018/08/23 18:38:19 [INFO] [io.github.swagger2markup.markup.builder.internal.markdown.MarkdownBuilder] Markup document written to: src\docs\markdown\generated\all\security.md
+2018/08/23 18:38:19 [INFO] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a1a14a4: startup date [Thu Aug 23 18:38:01 CST 2018]; root of context hierarchy
+2018/08/23 18:38:19 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor] Stopping beans in phase 2147483647

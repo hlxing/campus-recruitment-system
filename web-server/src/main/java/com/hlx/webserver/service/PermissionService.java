@@ -1,7 +1,6 @@
 package com.hlx.webserver.service;
 
-import com.hlx.webserver.model.Permission;
-
+import com.hlx.webserver.model.po.Permission;
 import java.util.List;
 
 /**

@@ -1,7 +1,7 @@
 package com.hlx.webserver.service.impl;
 
 import com.hlx.webserver.dao.RoleDao;
-import com.hlx.webserver.model.Role;
+import com.hlx.webserver.model.po.Role;
 import com.hlx.webserver.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

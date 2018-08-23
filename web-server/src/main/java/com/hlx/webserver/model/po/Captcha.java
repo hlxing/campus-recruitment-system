@@ -1,11 +1,11 @@
-package com.hlx.webserver.model;
+package com.hlx.webserver.model.po;
 
 import lombok.Data;
 
 import java.awt.image.BufferedImage;
 
 /**
- * @description: 验证码模型
+ * @description: 验证码实体
  * @author: hlx 2018-08-15
  **/
 @Data

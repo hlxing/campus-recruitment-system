@@ -1,13 +1,15 @@
-package com.hlx.webserver.model;
+package com.hlx.webserver.model.po;
 
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * @description: 权限实体
  * @author: hlx 2018-08-21
  **/
 @Data
-public class Permission {
+public class Permission implements Serializable{
 
     private Integer id;
 

@@ -1,7 +1,6 @@
 package com.hlx.webserver.service;
 
-import com.hlx.webserver.model.Role;
-
+import com.hlx.webserver.model.po.Role;
 import java.util.List;
 
 /**

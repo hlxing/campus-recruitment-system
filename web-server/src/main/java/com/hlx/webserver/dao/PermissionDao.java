@@ -1,6 +1,6 @@
 package com.hlx.webserver.dao;
 
-import com.hlx.webserver.model.Permission;
+import com.hlx.webserver.model.po.Permission;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
