@@ -1,14 +1,11 @@
 package com.hlx.webserver.controller;
 
-import com.hlx.webserver.model.ApiResponse;
+import com.hlx.webserver.model.po.ApiResponse;
 import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 /**
  * @description: 服务器连接测试

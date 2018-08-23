@@ -1,4 +1,4 @@
-package com.hlx.webserver.model;
+package com.hlx.webserver.model.po;
 
 import lombok.Data;
 import java.io.Serializable;
@@ -20,6 +20,8 @@ public class User implements Serializable {
     private Long createTime;
 
     private String password;
+
+    private String sessionId;
 
     // 角色集合
     private Set<String> roles;

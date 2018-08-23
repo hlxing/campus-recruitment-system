@@ -1,6 +1,7 @@
 package com.hlx.webserver.dao;
 
-import com.hlx.webserver.model.User;
+import com.hlx.webserver.model.po.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -13,4 +14,8 @@ public interface UserDao {
     User getByName(String name);
 
     User getByEmail(String email);
+
+    String getSessionIdByUserId(Integer userId);
+
+    void updateSessionIdByUserId(@Param("userId") Integer userId, @Param("sessionId") String sessionId);
 }

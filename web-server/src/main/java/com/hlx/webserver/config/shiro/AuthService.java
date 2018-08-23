@@ -1,7 +1,7 @@
 package com.hlx.webserver.config.shiro;
 
-import com.hlx.webserver.model.Permission;
-import com.hlx.webserver.model.Role;
+import com.hlx.webserver.model.po.Permission;
+import com.hlx.webserver.model.po.Role;
 import com.hlx.webserver.service.PermissionService;
 import com.hlx.webserver.service.RoleService;
 import org.apache.shiro.authc.AuthenticationException;

@@ -1,6 +1,6 @@
 package com.hlx.webserver.exception;
 
-import com.hlx.webserver.model.ApiResponse;
+import com.hlx.webserver.model.po.ApiResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

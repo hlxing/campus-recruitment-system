@@ -1,6 +1,6 @@
 package com.hlx.webserver.util;
 
-import com.hlx.webserver.model.Captcha;
+import com.hlx.webserver.model.po.Captcha;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

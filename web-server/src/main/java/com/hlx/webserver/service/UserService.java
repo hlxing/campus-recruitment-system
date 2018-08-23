@@ -1,7 +1,9 @@
 package com.hlx.webserver.service;
 
+
 import com.hlx.webserver.constant.UserValidation;
-import com.hlx.webserver.model.User;
+import com.hlx.webserver.model.dto.LoginDTO;
+import com.hlx.webserver.model.dto.RegisterDTO;
 
 /**
  * @description: 用户服务接口
@@ -10,13 +12,17 @@ import com.hlx.webserver.model.User;
 public interface UserService {
 
     // 用户登录
-    boolean login(User user);
+    Integer login(LoginDTO loginDTO);
 
     // 用户注册
-    UserValidation register(User user, String captcha);
+    UserValidation register(RegisterDTO registerDTO);
 
     // 获取邮箱验证码
     UserValidation getEmailCaptcha(String email);
 
+    // 获取sessionId
+    String getSessionIdByUserId(Integer userId);
 
+    // 更新sessionId
+    void updateSessionIdByUserId(Integer userId, String sessionId);
 }

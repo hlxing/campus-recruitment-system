@@ -1,6 +1,6 @@
 package com.hlx.webserver.controller;
 
-import com.hlx.webserver.model.ApiResponse;
+import com.hlx.webserver.model.po.ApiResponse;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;

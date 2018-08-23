@@ -3,7 +3,9 @@ package com.hlx.webserver.service.impl;
 import com.hlx.webserver.constant.EmailTemplate;
 import com.hlx.webserver.constant.UserValidation;
 import com.hlx.webserver.dao.UserDao;
-import com.hlx.webserver.model.User;
+import com.hlx.webserver.model.dto.LoginDTO;
+import com.hlx.webserver.model.dto.RegisterDTO;
+import com.hlx.webserver.model.po.User;
 import com.hlx.webserver.service.EmailService;
 import com.hlx.webserver.service.UserService;
 import com.hlx.webserver.util.RandomUtil;
@@ -37,7 +39,7 @@ public class UserServiceImpl implements UserService{
     private static final String PASSWORD_PATTERN = "^[a-zA-Z0-9]{6,12}$";
 
     // 邮箱的正则表达式
-    private static final String EMAIL_PATTERN = "^([A-Za-z0-9_\\-\\.])+\\@([A-Za-z0-9_\\-\\.])+\\.([A-Za-z]{2,4})$";
+    private static final String EMAIL_PATTERN = "^([A-Za-z0-9_\\-.])+@([A-Za-z0-9_\\-.])+\\.([A-Za-z]{2,4})$";
 
     @Autowired
     public UserServiceImpl(UserDao userDao,StringRedisTemplate template,EmailService emailService) {
@@ -46,45 +48,52 @@ public class UserServiceImpl implements UserService{
         this.emailService = emailService;
     }
 
+    /**
+     *
+     * 登录成功后返回userId
+     */
     @Override
-    public boolean login(User user) {
-        User rightUser = userDao.getByName(user.getName());
-        if (rightUser != null) {
-            // 获取user.id
-            user.setId(rightUser.getId());
-            String encryptedPass = DigestUtils.sha1Hex(user.getPassword());
-            return rightUser.getPassword().equals(encryptedPass);
+    public Integer login(LoginDTO loginDTO) {
+        User rightUser = userDao.getByName(loginDTO.getName());
+        String encryptedPass = DigestUtils.sha1Hex(loginDTO.getPassword());
+        if (rightUser != null && rightUser.getPassword().equals(encryptedPass)) {
+            return  rightUser.getId();
         }
-        return false;
+        return null;
     }
 
     @Override
-    public UserValidation register(User user, String captcha) {
+    public UserValidation register(RegisterDTO registerDTO) {
+        // 解析DTO
+        String userName = registerDTO.getName();
+        String userPass = registerDTO.getPassword();
+        String userEmail = registerDTO.getEmail();
+        String emailCaptcha = registerDTO.getEmailCaptcha();
         // 非法输入
-        if (!Pattern.matches(NAME_PATTERN, user.getName())
-                && !user.getName().contains("@")) {
+        if (!Pattern.matches(NAME_PATTERN, userName)
+                && !userName.contains("@")) {
             return UserValidation.NAME_INVALID;
-        } else if (!Pattern.matches(PASSWORD_PATTERN, user.getPassword())) {
+        } else if (!Pattern.matches(PASSWORD_PATTERN, userPass)) {
             return UserValidation.PASSWORD_INVALID;
-        } else if (!Pattern.matches(EMAIL_PATTERN, user.getEmail())) {
+        } else if (!Pattern.matches(EMAIL_PATTERN, userPass)) {
             return UserValidation.EMAIL_INVALID;
         }
         // 邮箱以及用户名是否存在
-        if (userDao.getByName(user.getName()) != null) {
+        if (userDao.getByName(userName) != null) {
             return UserValidation.NAME_EXIST;
-        } else if (userDao.getByEmail(user.getEmail()) != null) {
+        } else if (userDao.getByEmail(userEmail) != null) {
             return UserValidation.EMAIL_EXIST;
         }
         //从redis读取'邮箱认证',包含count(验证码验证次数),captcha(验证码)
         //'邮箱认证'位于 "emailAuth:" + 验证的邮箱
-        String authAddress = "emailAuth:" + user.getEmail();
+        String authAddress = "emailAuth:" + userEmail;
         Map<Object, Object> emailAuth =  template.opsForHash().entries(authAddress);
         // 过期检测
         if (emailAuth.isEmpty()) {
             return UserValidation.EMAIL_CAPTCHA_EXPIRE;
         }
         String rightCaptcha = (String) emailAuth.get("captcha");
-        if (captcha.equals(rightCaptcha)) {
+        if (emailCaptcha.equals(rightCaptcha)) {
             return UserValidation.SUCCESS;
         }else{
             //再次自增,并判断验证次数是否大于3,是则销毁
@@ -123,4 +132,16 @@ public class UserServiceImpl implements UserService{
         return UserValidation.SUCCESS;
     }
 
+    @Override
+    public String getSessionIdByUserId(Integer userId) {
+        if (userId != null && userId > 0) {
+            return userDao.getSessionIdByUserId(userId);
+        }
+        return null;
+    }
+
+    @Override
+    public void updateSessionIdByUserId(Integer userId, String sessionId) {
+        userDao.updateSessionIdByUserId(userId, sessionId);
+    }
 }

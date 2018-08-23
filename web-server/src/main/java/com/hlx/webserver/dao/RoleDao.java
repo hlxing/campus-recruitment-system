@@ -1,6 +1,6 @@
 package com.hlx.webserver.dao;
 
-import com.hlx.webserver.model.Role;
+import com.hlx.webserver.model.po.Role;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
