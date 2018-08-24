@@ -1,56 +1,60 @@
 <template>
   <div class="container">
     <div class="news-item left">
-      <div :class="mouseon===1?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=1" v-on:mouseout="mouseon=0">
-        <p class="position">Web前端开发工程师</p>
-        <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
-        <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
-      </div>
+      <router-link  to="/detail">
+        <div class="news-card">
+          <p class="position">Web前端开发工程师</p>
+          <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
+          <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
+        </div>
+      </router-link>
     </div>
     <div class="news-item mid-left">
-      <div :class="mouseon===2?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=2" v-on:mouseout="mouseon=0">
-        <p class="position">Web前端开发工程师</p>
-        <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
-        <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
-      </div>
+      <router-link  to="/detail">
+        <div class="news-card">
+          <p class="position">Web前端开发工程师</p>
+          <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
+          <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
+        </div>
+      </router-link>
     </div>
     <div class="news-item mid-right">
-      <div :class="mouseon===3?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=3" v-on:mouseout="mouseon=0">
+      <div class="news-card">
         <p class="position">Web前端开发工程师</p>
         <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
         <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
       </div>
     </div>
     <div class="news-item right">
-      <div :class="mouseon===4?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=4" v-on:mouseout="mouseon=0">
+      <div class="news-card">
         <p class="position">Web前端开发工程师</p>
         <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
         <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
       </div>
     </div>
     <div class="news-item left">
-      <div :class="mouseon===5?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=5" v-on:mouseout="mouseon=0">
+      <div class="news-card">
         <p class="position">Web前端开发工程师</p>
         <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
         <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
       </div>
     </div>
     <div class="news-item mid-left">
-      <div :class="mouseon===6?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=6" v-on:mouseout="mouseon=0">
+      <div class="news-card">
         <p class="position">Web前端开发工程师</p>
         <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
         <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
       </div>
     </div>
     <div class="news-item mid-right">
-      <div :class="mouseon===7?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=7" v-on:mouseout="mouseon=0">
+      <div class="news-card">
         <p class="position">Web前端开发工程师</p>
         <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
         <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
       </div>
     </div>
     <div class="news-item right">
-      <div :class="mouseon===8?'news-card mouseon':'news-card'" v-on:mouseover="mouseon=8" v-on:mouseout="mouseon=0">
+      <div class="news-card">
         <p class="position">Web前端开发工程师</p>
         <p class="info"><img src="../assets/locad.png" class="logo">地址：上海</p>
         <p class="info"><img src="../assets/company.png" class="logo">京东集团</p>
@@ -64,7 +68,7 @@ export default {
   name: 'EmployInfo',
   data () {
     return {
-      mouseon: 2
+
     }
   },
   methods: {
@@ -110,9 +114,15 @@ export default {
   .news-card {
     width: 100%;
     height: 126px;
-    border: 1px solid #f25741;
+    border: 2px solid #adadad;
     border-radius: 4px;
     cursor: pointer;
+    transition: color .2s,
+                border .2s;
+  }
+  .news-card:hover {
+    color: #f25741;
+    border: 2px solid #f25741;
   }
 
   .position {
@@ -133,7 +143,8 @@ export default {
     color: #8b8b8b;
   }
 
-  .mouseon {
-    color: #f25741;
+  a {
+    text-decoration: none;
+    color: #2c3e50;
   }
 </style>

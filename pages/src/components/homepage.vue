@@ -8,6 +8,7 @@
         <div class="search-btn">
           <img src="../assets/search.png" class="search-img">
         </div>
+        <p class="hot">热门关键字： 前端 、 PHP 、 安卓</p>
       </div>
     </div>
     <div>
@@ -98,5 +99,12 @@ export default {
     right: 0;
     margin: auto;
     width: 22px;
+  }
+
+  .hot {
+    position: absolute;
+    top: 148px;
+    left: 0;
+    color: #fff;
   }
 </style>

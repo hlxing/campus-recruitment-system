@@ -4,8 +4,12 @@
       <img src="../assets/fzu-logo.png" class="logo">
       <div class="tab">
         <ul>
-          <li :class="on === 1?'chosed':''" v-on:click="on=1">首页</li>
-          <li :class="on === 2?'chosed':''" v-on:click="on=2">招聘专场</li>
+          <router-link  to="/">
+            <li :class="on === 1?'chosed':''" v-on:click="on=1">首页</li>
+          </router-link>
+          <router-link  to="/detail">
+            <li :class="on === 2?'chosed':''" v-on:click="on=2">招聘专场</li>
+          </router-link>
           <li :class="on === 3?'chosed':''" v-on:click="on=3">招聘信息</li>
         </ul>
       </div>
@@ -36,7 +40,7 @@ export default {
 
   .container {
     position: relative;
-    width: 80%;
+    width: 76%;
     min-width: 880px;
     height: 50px;
     margin: auto;
