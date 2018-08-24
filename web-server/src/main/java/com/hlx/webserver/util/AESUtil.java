@@ -4,7 +4,6 @@ import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
 import java.util.Base64;
 
 /**
@@ -39,7 +38,7 @@ public class AESUtil {
                     .encodeToString(encryptedBytes);
         } catch (Exception ex) {
             ex.printStackTrace();
-            return "";
+            return null;
         }
 
     }
@@ -54,7 +53,7 @@ public class AESUtil {
             return new String(decryptedBytes);
         }catch (Exception ex){
             ex.printStackTrace();
-            return "";
+            return null;
         }
     }
 
