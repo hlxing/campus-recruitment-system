@@ -7,14 +7,11 @@ import com.hlx.webserver.model.po.ApiResponse;
 import com.hlx.webserver.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.session.data.redis.RedisOperationsSessionRepository;
 import org.springframework.web.bind.annotation.*;
-
-import javax.crypto.KeyGenerator;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -84,5 +81,19 @@ public class UserController {
         return apiResponse;
     }
 
+    @ApiOperation(value = "注销")
+    @GetMapping("/logout")
+    public ApiResponse<String> logout(HttpServletRequest request) {
+        ApiResponse<String> apiResponse = new ApiResponse<>();
+        // 获取已有的session,有则删除
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            // 从redis中删除该session
+            sessionRepository.deleteById(session.getId());
+        }else{
+            apiResponse.setStatus(404);
+        }
+        return apiResponse;
+    }
 
 }
