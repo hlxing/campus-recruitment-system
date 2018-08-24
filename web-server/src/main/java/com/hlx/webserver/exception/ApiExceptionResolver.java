@@ -1,6 +1,6 @@
 package com.hlx.webserver.exception;
 
-import com.hlx.webserver.model.po.ApiResponse;
+import com.hlx.webserver.model.po.ApiResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -22,8 +22,8 @@ public class ApiExceptionResolver {
     @ExceptionHandler(value = {Exception.class})
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     @ResponseBody
-    public ApiResponse<String> resolveException(Exception ex) {
-        ApiResponse<String> apiResponse = new ApiResponse<>(404, "未知错误", null);
+    public ApiResult<String> resolveException(Exception ex) {
+        ApiResult<String> apiResponse = new ApiResult<>(404, "未知错误", null);
         apiResponse.setText(ex.toString());
         logger.error("捕获异常:"+ex.getMessage());
         ex.printStackTrace();
