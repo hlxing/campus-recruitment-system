@@ -1,6 +1,6 @@
 package com.hlx.webserver.controller;
 
-import com.hlx.webserver.model.po.ApiResponse;
+import com.hlx.webserver.model.po.ApiResult;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
@@ -18,9 +18,8 @@ public class PageErrorController implements ErrorController {
     @ApiOperation(value = "错误页面", notes = "访问未知接口时返回")
     @GetMapping(value = "/error")
     @ResponseBody
-    public ApiResponse<String> error() {
-
-        return new ApiResponse<>(13, ":boom:", null);
+    public ApiResult<String> error() {
+        return new ApiResult<>(13, ":boom:", null);
     }
 
     @Override

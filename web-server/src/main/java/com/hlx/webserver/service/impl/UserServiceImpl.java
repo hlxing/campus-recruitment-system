@@ -8,12 +8,16 @@ import com.hlx.webserver.model.dto.RegisterDTO;
 import com.hlx.webserver.model.po.User;
 import com.hlx.webserver.service.EmailService;
 import com.hlx.webserver.service.UserService;
+import com.hlx.webserver.util.AESUtil;
 import com.hlx.webserver.util.RandomUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.session.data.redis.RedisOperationsSessionRepository;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -32,6 +36,9 @@ public class UserServiceImpl implements UserService{
 
     private EmailService emailService;
 
+    // Spring-Session-Redis操作DAO,管理控制session
+    private RedisOperationsSessionRepository sessionRepository;
+
     // 用户名的正则表达式:3-12位,大小写字母,数字及汉字组合
     private static final String NAME_PATTERN = "^[a-zA-Z0-9\\u4e00-\\u9fa5]{3,12}$";
 
@@ -41,25 +48,44 @@ public class UserServiceImpl implements UserService{
     // 邮箱的正则表达式
     private static final String EMAIL_PATTERN = "^([A-Za-z0-9_\\-.])+@([A-Za-z0-9_\\-.])+\\.([A-Za-z]{2,4})$";
 
+    // 数据库session-AES-密钥
+    private static final String SESSION_PWD = "8X1V2EoXH79CZ3zS";
+
     @Autowired
-    public UserServiceImpl(UserDao userDao,StringRedisTemplate template,EmailService emailService) {
+    public UserServiceImpl(UserDao userDao,StringRedisTemplate template,EmailService emailService,
+                           RedisOperationsSessionRepository sessionRepository) {
         this.userDao = userDao;
         this.template = template;
         this.emailService = emailService;
+        this.sessionRepository = sessionRepository;
     }
 
     /**
      *
-     * 登录成功后返回userId
+     * @param loginDTO 登录业务的数据传输对象
+     * @param request http请求,用于管理session
+     * @return  bool,是否登录成功
      */
     @Override
-    public Integer login(LoginDTO loginDTO) {
+    public boolean login(LoginDTO loginDTO, HttpServletRequest request) {
         User rightUser = userDao.getByName(loginDTO.getName());
         String encryptedPass = DigestUtils.sha1Hex(loginDTO.getPassword());
         if (rightUser != null && rightUser.getPassword().equals(encryptedPass)) {
-            return  rightUser.getId();
+            // 清除已有的sessionID,保证同一时间一处登录
+            Integer userId = rightUser.getId();
+            // 解密AES-Session
+            String sessionId = AESUtil.decrypt(
+                    userDao.getSessionIdByUserId(userId),SESSION_PWD);
+            if (sessionId != null) {
+                sessionRepository.deleteById(sessionId);
+            }
+            // 自动创建一个新的session,并重新加密保存
+            HttpSession newSession = request.getSession(true);
+            String encryptSessionId = AESUtil.encrypt(newSession.getId(), SESSION_PWD);
+            userDao.updateSessionIdByUserId(userId,encryptSessionId);
+            return true;
         }
-        return null;
+        return false;
     }
 
     @Override
@@ -132,16 +158,19 @@ public class UserServiceImpl implements UserService{
         return UserValidation.SUCCESS;
     }
 
+    /**
+     * @param request http请求，用于获取sessionId
+     * @return bool, 注销是否成功
+     */
     @Override
-    public String getSessionIdByUserId(Integer userId) {
-        if (userId != null && userId > 0) {
-            return userDao.getSessionIdByUserId(userId);
+    public boolean logout(HttpServletRequest request) {
+        // 获取已有的session,没有则不自动创建(create:false)
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            sessionRepository.deleteById(session.getId());
+            return true;
         }
-        return null;
+        return false;
     }
 
-    @Override
-    public void updateSessionIdByUserId(Integer userId, String sessionId) {
-        userDao.updateSessionIdByUserId(userId, sessionId);
-    }
 }
