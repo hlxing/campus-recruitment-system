@@ -30,7 +30,7 @@ export default {
     }
   },
   methods: {
-    loginSignal: function(inupsignal) {
+    loginSignal: function (inupsignal) {
       this.Signal = inupsignal
     }
   }

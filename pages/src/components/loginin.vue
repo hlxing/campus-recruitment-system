@@ -32,11 +32,11 @@ export default {
     }
   },
   methods: {
-    close: function() {
+    close: function () {
       this.login = 0
       this.$emit('loginSignal', this.login)
     },
-    loginUp: function() {
+    loginUp: function () {
       this.login = 2
       this.$emit('loginSignal', this.login)
     }

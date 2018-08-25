@@ -34,12 +34,12 @@ export default {
     }
   },
   methods: {
-    close: function() {
+    close: function () {
       this.login = 0
       this.$emit('loginSignal', this.login)
     },
-    loginIn: function() {
-      this.login =1
+    loginIn: function () {
+      this.login = 1
       this.$emit('loginSignal', this.login)
     }
   }
