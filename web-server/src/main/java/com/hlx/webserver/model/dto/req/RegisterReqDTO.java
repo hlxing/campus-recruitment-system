@@ -1,4 +1,4 @@
-package com.hlx.webserver.model.dto;
+package com.hlx.webserver.model.dto.req;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -7,12 +7,12 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @description: 注册传输对象
+ * @description: 注册请求对象
  * @author: hlx 2018-08-23
  **/
-@ApiModel(description = "注册业务传输对象")
+@ApiModel(description = "注册请求对象")
 @Data
-public class RegisterDTO implements Serializable{
+public class RegisterReqDTO implements Serializable{
 
     @ApiModelProperty(required = true, value = "用户名", example = "hlx")
     private String name;
@@ -26,13 +26,13 @@ public class RegisterDTO implements Serializable{
     @ApiModelProperty(required = true, value = "邮箱验证码", example = "1Y2S")
     private String emailCaptcha;
 
-    public RegisterDTO(String name, String email, String password, String emailCaptcha) {
+    public RegisterReqDTO(String name, String email, String password, String emailCaptcha) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.emailCaptcha = emailCaptcha;
     }
 
-    public RegisterDTO() {
+    public RegisterReqDTO() {
     }
 }

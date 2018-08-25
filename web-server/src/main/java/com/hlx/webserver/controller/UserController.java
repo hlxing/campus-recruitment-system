@@ -1,8 +1,8 @@
 package com.hlx.webserver.controller;
 
 import com.hlx.webserver.constant.UserValidation;
-import com.hlx.webserver.model.dto.LoginDTO;
-import com.hlx.webserver.model.dto.RegisterDTO;
+import com.hlx.webserver.model.dto.req.LoginReqDTO;
+import com.hlx.webserver.model.dto.req.RegisterReqDTO;
 import com.hlx.webserver.model.po.ApiResult;
 import com.hlx.webserver.service.UserService;
 import io.swagger.annotations.*;
@@ -31,7 +31,7 @@ public class UserController {
 
     @ApiOperation(value = "用户登录")
     @PostMapping("/login")
-    public ApiResult<String> login(@RequestBody LoginDTO loginDTO, HttpServletRequest request) {
+    public ApiResult<String> login(@RequestBody LoginReqDTO loginDTO, HttpServletRequest request) {
         ApiResult<String> apiResponse = new ApiResult<>();
         boolean loginSuccess = userService.login(loginDTO,request);
         if (loginSuccess) {
@@ -58,7 +58,7 @@ public class UserController {
             @ApiResponse(code = 136, message = "密码非法")
     })
     @PostMapping("/register")
-    public ApiResult<String> register(@RequestBody RegisterDTO registerDTO) {
+    public ApiResult<String> register(@RequestBody RegisterReqDTO registerDTO) {
         ApiResult<String> apiResponse = new ApiResult<>();
         UserValidation registerResult = userService.register(registerDTO);
         apiResponse.setStatus(registerResult.getCode());

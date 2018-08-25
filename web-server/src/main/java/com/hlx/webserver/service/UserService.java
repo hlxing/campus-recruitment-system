@@ -1,8 +1,8 @@
 package com.hlx.webserver.service;
 
 import com.hlx.webserver.constant.UserValidation;
-import com.hlx.webserver.model.dto.LoginDTO;
-import com.hlx.webserver.model.dto.RegisterDTO;
+import com.hlx.webserver.model.dto.req.LoginReqDTO;
+import com.hlx.webserver.model.dto.req.RegisterReqDTO;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 public interface UserService {
 
     // 用户登录
-    boolean login(LoginDTO loginDTO, HttpServletRequest request);
+    boolean login(LoginReqDTO loginDTO, HttpServletRequest request);
 
     // 用户注册
-    UserValidation register(RegisterDTO registerDTO);
+    UserValidation register(RegisterReqDTO registerDTO);
 
     // 获取邮箱验证码
     UserValidation getEmailCaptcha(String email);
