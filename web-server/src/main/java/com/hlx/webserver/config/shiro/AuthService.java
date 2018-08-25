@@ -69,7 +69,7 @@ public class AuthService extends AuthorizingRealm {
      * 定义获取用户信息的逻辑,即登录判断(token合法性),错误直接抛出异常(原意)
      *
      * 由于Spring-Session在Restful下的特殊性, {@link (AuthFilter)}在executeLogin方法中
-     * 通过检测session合法性来判断是否登录,此函数仅用来包装SimpleAuthenticationInfo
+     * 已经通过检测session合法性来判断是否登录,此函数仅用来包装SimpleAuthenticationInfo
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {

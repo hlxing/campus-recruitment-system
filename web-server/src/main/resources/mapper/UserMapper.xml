@@ -40,4 +40,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			id = #{userId}
 	</update>
 
+	<insert id="save" parameterType="User">
+		INSERT INTO
+			user(name,email,password)
+		VALUES
+			(#{name}, #{email}, #{password})
+	</insert>
+
 </mapper>  

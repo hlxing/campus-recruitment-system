@@ -22,6 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<!-- 跳过测试样例 -->
+		<skipTests>true</skipTests>
 	</properties>
 
 	<dependencies>
@@ -123,13 +125,19 @@
 			<artifactId>spring-boot-starter-mail</artifactId>
 			<version>2.0.1.RELEASE</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
+		<finalName>campus-recruitment</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- 完全可执行 -->
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
