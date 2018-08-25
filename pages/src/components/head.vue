@@ -13,8 +13,8 @@
           <li :class="on === 3?'chosed':''" v-on:click="on=3">招聘信息</li>
         </ul>
       </div>
-      <button class="btn login-in">登录</button>
-      <button class="btn login-up">注册</button>
+      <button class="btn login-in" @click="loginIn">登录</button>
+      <button class="btn login-up" @click="loginUp">注册</button>
     </div>
   </div>
 </template>
@@ -24,11 +24,19 @@ export default {
   name: 'MyHeader',
   data () {
     return {
-      on: 1
+      on: 1,
+      login: 0
     }
   },
   methods: {
-
+    loginIn: function () {
+      this.login = 1
+      this.$emit('loginSignal', this.login)
+    },
+    loginUp: function () {
+      this.login = 2
+      this.$emit('loginSignal', this.login)
+    }
   }
 }
 </script>
@@ -73,13 +81,13 @@ export default {
   }
 
   ul li:hover {
-    color: #f25741;
+    color: #e45d47;
   }
 
   .chosed {
-    color: #f25741;
+    color: #e45d47;
     padding-bottom: 2px;
-    border-bottom: 2px solid #f25741;
+    border-bottom: 2px solid #e45d47;
   }
 
   .btn {
@@ -87,7 +95,7 @@ export default {
     top: 12px;
     padding: 1px 10px;
     font-size: 16px;
-    border: 1px solid #f25741;
+    border: 1px solid #e45d47;
     border-radius: 2px;
     background-color: transparent;
     cursor: pointer;
@@ -95,12 +103,12 @@ export default {
 
   .login-in {
     right: 70px;
-    color: #f25741;
+    color: #e45d47;
   }
 
   .login-up {
     right: 0;
     color: #fff;
-    background-color: #f25741;
+    background-color: #e45d47;
   }
 </style>

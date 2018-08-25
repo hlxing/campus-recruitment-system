@@ -260,7 +260,7 @@ export default {
                 border .2s;
   }
   .news-card:hover {
-    border: 2px solid #f25741;
+    border: 2px solid #e45d47;
   }
 
   .position {
@@ -293,6 +293,6 @@ export default {
     width: 70px;
     line-height: 24px;
     text-align: left;
-    color: #f25741;
+    color: #e45d47;
   }
 </style>

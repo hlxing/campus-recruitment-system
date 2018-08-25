@@ -86,7 +86,7 @@ export default {
     height: 40px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-color: #f25741;
+    background-color: #e45d47;
     opacity: 0.9;
     cursor: pointer;
   }
