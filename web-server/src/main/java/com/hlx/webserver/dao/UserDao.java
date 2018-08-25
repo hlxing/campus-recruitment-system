@@ -18,4 +18,6 @@ public interface UserDao {
     String getSessionIdByUserId(Integer userId);
 
     void updateSessionIdByUserId(@Param("userId") Integer userId, @Param("sessionId") String sessionId);
+
+    void save(User user);
 }

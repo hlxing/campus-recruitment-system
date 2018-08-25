@@ -5,12 +5,15 @@ import com.hlx.webserver.model.dto.req.LoginReqDTO;
 import com.hlx.webserver.model.dto.req.RegisterReqDTO;
 import com.hlx.webserver.model.po.ApiResult;
 import com.hlx.webserver.service.UserService;
+import com.hlx.webserver.util.IpUtil;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * @description: 用户控制
@@ -73,8 +76,8 @@ public class UserController {
             @ApiResponse(code = 132, message = "邮箱已经存在"),
             @ApiResponse(code = 133, message = "邮箱非法"),
     })
-    @GetMapping("/emailCaptcha/{email}")
-    public ApiResult<String> mailCaptcha(@PathVariable("email") String email) {
+    @GetMapping("/emailCaptcha")
+    public ApiResult<String> mailCaptcha(@RequestParam("email") String email) {
         ApiResult<String> apiResponse = new ApiResult<>();
         UserValidation captchaResult = userService.getEmailCaptcha(email);
         apiResponse.setText(captchaResult.getMsg());
@@ -91,6 +94,21 @@ public class UserController {
             apiResponse.setStatus(404);
         }
         return apiResponse;
+    }
+
+
+    @ApiOperation(value = "获取验证码")
+    @GetMapping("/captcha")
+    public void captcha(HttpServletResponse response, HttpServletRequest request) {
+        // 由于redis冒号作为键的划分标志,需要手动将':'转 '-'
+        String ip = IpUtil.getAddress(request)
+                .replaceAll(":","-");
+        response.setContentType("image/jpeg");
+        try {
+            userService.getCaptcha(ip, response.getOutputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -3,7 +3,6 @@ package com.hlx.webserver.model.dto.req;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
 import java.io.Serializable;
 
 /**
@@ -20,9 +19,13 @@ public class LoginReqDTO implements Serializable{
     @ApiModelProperty(required = true, value = "密码", example = "123456")
     private String password;
 
-    public LoginReqDTO(String name, String password) {
+    @ApiModelProperty(required = true, value = "验证码", example = "AC")
+    private String captcha;
+
+    public LoginReqDTO(String name, String password, String captcha) {
         this.name = name;
         this.password = password;
+        this.captcha = captcha;
     }
 
     public LoginReqDTO() {

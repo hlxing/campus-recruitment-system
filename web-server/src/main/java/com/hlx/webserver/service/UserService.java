@@ -4,6 +4,7 @@ import com.hlx.webserver.constant.UserValidation;
 import com.hlx.webserver.model.dto.req.LoginReqDTO;
 import com.hlx.webserver.model.dto.req.RegisterReqDTO;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -24,4 +25,6 @@ public interface UserService {
     // 用户注销
     boolean logout(HttpServletRequest request);
 
+    // 获取验证码
+    void getCaptcha(String ip, ServletOutputStream outputStream);
 }
