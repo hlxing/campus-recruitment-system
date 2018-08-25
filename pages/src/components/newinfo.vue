@@ -7,17 +7,20 @@
       </ul>
       <p class="more-tip" v-if="on===1">查看更多>></p>
     </div>
-    <EmployInfo></EmployInfo>
+    <EmployInfo v-if="on===1"></EmployInfo>
+    <PositionChose v-if="on===2"></PositionChose>
   </div>
 </template>
 
 <script>
-import EmployInfo from './employmentinfo'
+import EmployInfo from './newemploymentinfo'
+import PositionChose from './positionchose'
 
 export default {
   name: 'NewInfo',
   components: {
-    EmployInfo
+    EmployInfo,
+    PositionChose
   },
   data () {
     return {
@@ -30,8 +33,7 @@ export default {
 <style scoped>
   .container {
     position: relative;
-    width: 80%;
-    height: 290px;
+    width: 76%;
     margin-top: 20px;
   }
 
@@ -48,7 +50,7 @@ export default {
 
   .chosed {
     color: #f25741;
-    border: 1px solid #f25741;
+    border: 2px solid #f25741;
     border-radius: 6px;
   }
 
