@@ -11,7 +11,7 @@
       <p><span class="tip">公司：</span>技术方向</p>
       <p><span class="tip">岗位职责：</span>技术方向</p>
       <p><span class="tip">岗位要求：</span>技术方向</p>
-      <p class="time">2018.08.20</p>
+      <p class="time">发布于：2018.08.20</p>
       <button class="pick">Pick</button>
     </div>
   </div>
@@ -31,8 +31,8 @@ export default {
 <style scoped>
   .container {
     width: 100%;
-    border-top: 2px solid #e4544199;
-    margin: 5px auto;
+    border-top: 2px solid #e35d4999;
+    margin: auto;
     padding: 5px;
   }
 
@@ -46,13 +46,14 @@ export default {
 
   .reback {
     text-align: right;
-    color: #e45441;
+    color: #e45d47;
+    cursor: pointer;
   }
 
   .title {
     padding-left: 14px;
     line-height: 40px;
-    border-left: 4px solid #f25741;
+    border-left: 4px solid #e45d47;
     font-size: 26px;
   }
 
@@ -79,12 +80,12 @@ export default {
     border: none;
     font-size: 20px;
     color: #fff;
-    background-color: #f17d68;
+    background-color: #e45d47;
     transition: background-color .3s;
     cursor: pointer;
   }
 
   .pick:hover {
-    background-color: #f25741;
+    background-color: #e45d47;
   }
 </style>

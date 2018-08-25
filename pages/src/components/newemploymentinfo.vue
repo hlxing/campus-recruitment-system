@@ -121,8 +121,8 @@ export default {
                 border .2s;
   }
   .news-card:hover {
-    color: #f25741;
-    border: 2px solid #f25741;
+    color: #e45d47;
+    border: 2px solid #e45d47;
   }
 
   .position {

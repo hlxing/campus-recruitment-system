@@ -49,8 +49,8 @@ export default {
   }
 
   .chosed {
-    color: #f25741;
-    border: 2px solid #f25741;
+    color: #e45d47;
+    border: 2px solid #e45d47;
     border-radius: 6px;
   }
 
@@ -59,7 +59,7 @@ export default {
     top: 5px;
     right: 0;
     margin: 0;
-    color: #f25741;
+    color: #e45d47;
     cursor: pointer;
   }
 </style>
