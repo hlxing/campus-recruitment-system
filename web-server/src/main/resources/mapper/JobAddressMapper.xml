@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hlx.webserver.dao.JobAddressDao">
+
+	<insert id="save" parameterType="String">
+		INSERT INTO
+			job_address(name)
+		VALUES 
+			(#{name})
+	</insert>
+
+	<delete id="deleteById" parameterType="Integer">
+		DELETE FROM
+			job_address
+		WHERE
+			id = #{id}
+	</delete>
+
+	<select id="list" resultType="JobAddress">
+		SELECT
+			job_address.id,job_address.name
+		FROM
+			job_address
+	</select>
+
+	<select id="getByName" resultType="JobAddress">
+		SELECT
+			job_address.id,job_address.name
+		FROM
+			job_address
+		WHERE
+			name = #{name}
+	</select>
+
+</mapper>  
