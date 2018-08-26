@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hlx.webserver.dao.RecruitmentInfoDao">
+
+	<insert id="save" parameterType="RecruitmentInfo">
+		INSERT INTO
+			recruitment_info(name,directionId,typeId,company,
+							 addressId,responsibility,requirement,createTime)
+		VALUES 
+			(#{name},#{directionId},#{typeId},#{company},
+			 #{addressId},#{responsibility},#{requirement},#{createTime})
+	</insert>
+	
+	<delete id="deleteById" parameterType="Integer">
+		DELETE FROM
+			recruitment_info
+		WHERE
+			id = #{recruitmentInfoId}
+	</delete>
+
+	<update id="update" parameterType="RecruitmentInfo">
+		UPDATE
+			recruitment_info
+		SET
+			name = #{name}, directionId = #{directionId}, typeId = #{typeId}, company = #{company},
+			addressId = #{addressId}, responsibility = #{responsibility}, requirement = #{requirement}
+		WHERE
+			id = #{id}
+	</update>
+
+	<select id="listByQuery" parameterType="RecruitmentInfoQuery">
+		SELECT
+			id,name,directionId,typeId,company,addressId,responsibility,requirement,createTime
+		FROM
+			recruitment_info
+		<where>
+			<if test="directionId != null">
+				directionId = #{directionId}
+			</if>
+			<if test="typeId !=null">
+				and typeId = #{typeId}
+			</if>
+		</where>
+	</select>
+
+</mapper>  
