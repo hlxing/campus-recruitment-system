@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hlx.webserver.dao.JobTypeDao">
+
+	<insert id="save" parameterType="jobType" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO
+			job_type(name)
+		VALUES 
+			(#{name})
+	</insert>
+
+	<insert id="saveDirectionType">
+		INSERT INTO
+			job_direction_type(directionId, typeId)
+		VALUES
+			(#{jobDirectionId}, #{jobTypeId})
+	</insert>
+	
+	<delete id="deleteById" parameterType="Integer">
+		DELETE FROM
+			job_type
+		WHERE
+			id = #{id}
+	</delete>
+
+	<select id="list" resultType="JobType">
+		SELECT
+			job_type.id,job_type.name
+		FROM
+			job_type
+	</select>
+
+	<select id="getByName" resultType="JobType">
+		SELECT
+			job_type.id,job_type.name
+		FROM
+			job_type
+		WHERE
+			name = #{name}
+	</select>
+
+	<select id="getById" resultType="JobType">
+		SELECT
+			job_type.id,job_type.name
+		FROM
+			job_type
+		WHERE
+			id = #{id}
+	</select>
+
+</mapper>  
