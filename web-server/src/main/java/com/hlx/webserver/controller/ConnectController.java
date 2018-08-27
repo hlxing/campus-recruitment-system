@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @description: 服务器连接测试
+ * @description: 连接测试控制层
  * @author: hlx 2018-08-14
  **/
 @RestController
@@ -20,20 +20,20 @@ public class ConnectController {
     @ApiOperation(value = "连接测试", notes = "直接GET!")
     @GetMapping("/test")
     public ApiResult<String> test() {
-        ApiResult<String> apiResponse = new ApiResult<>();
-        apiResponse.setText("Connect Success");
+        ApiResult<String> apiResult = new ApiResult<>();
+        apiResult.setText("Connect Success");
         logger.info("测试连接成功!");
-        return apiResponse;
+        return apiResult;
     }
 
     //登录判断
     @ApiOperation(value = "登录拦截测试")
     @GetMapping("/test2")
     public ApiResult<String> test2() {
-        ApiResult<String> apiResponse = new ApiResult<>();
-        apiResponse.setText("Connect Success");
+        ApiResult<String> apiResult = new ApiResult<>();
+        apiResult.setText("Connect Success");
         logger.info("测试连接2成功!");
-        return apiResponse;
+        return apiResult;
     }
 
     //admin权限判断
@@ -41,10 +41,10 @@ public class ConnectController {
     @RequiresRoles("admin")
     @GetMapping("/test3")
     public ApiResult<String> test3() {
-        ApiResult<String> apiResponse = new ApiResult<>();
-        apiResponse.setText("Connect Success");
+        ApiResult<String> apiResult = new ApiResult<>();
+        apiResult.setText("Connect Success");
         logger.info("测试连接3成功!");
-        return apiResponse;
+        return apiResult;
     }
 
     //admin2权限判断
@@ -52,10 +52,10 @@ public class ConnectController {
     @RequiresRoles("admin2")
     @GetMapping("/test4")
     public ApiResult<String> test4() {
-        ApiResult<String> apiResponse = new ApiResult<>();
-        apiResponse.setText("Connect Success");
+        ApiResult<String> apiResult = new ApiResult<>();
+        apiResult.setText("Connect Success");
         logger.info("测试连接4成功!");
-        return apiResponse;
+        return apiResult;
     }
 
 }
