@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @description: 页面错误控制类
+ * @description: 页面错误控制层
  * @author: hlx 2018-08-20
  **/
 @Controller
