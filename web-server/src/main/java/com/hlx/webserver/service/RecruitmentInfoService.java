@@ -1,5 +1,6 @@
 package com.hlx.webserver.service;
 
+import com.hlx.webserver.model.dto.RecruitmentInfoAddDTO;
 import com.hlx.webserver.model.po.RecruitmentInfo;
 import com.hlx.webserver.model.query.RecruitmentInfoQuery;
 
@@ -11,7 +12,7 @@ import java.util.List;
  **/
 public interface RecruitmentInfoService {
 
-    boolean save(RecruitmentInfo recruitmentInfo);
+    boolean save(RecruitmentInfoAddDTO recruitmentInfoAddDTO);
 
     void deleteById(Integer recruitmentInfoId);
 

@@ -10,7 +10,7 @@ import java.util.List;
  **/
 public interface JobAddressDao {
 
-    void save(String name);
+    void save(JobAddress jobAddress);
 
     void deleteById(Integer id);
 

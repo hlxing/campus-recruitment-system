@@ -1,7 +1,6 @@
 package com.hlx.webserver.controller;
 
-import com.hlx.webserver.model.dto.req.JobDirectionDTO;
-import com.hlx.webserver.model.dto.vo.JobDirectionDetailVO;
+import com.hlx.webserver.model.vo.JobDirectionDetailVO;
 import com.hlx.webserver.model.po.ApiResult;
 import com.hlx.webserver.model.po.JobDirection;
 import com.hlx.webserver.service.JobDirectionService;
@@ -28,9 +27,9 @@ public class JobDirectionController {
 
     @ApiOperation(value = "添加工作方向")
     @PostMapping("/add")
-    public ApiResult<String> add(@RequestBody JobDirectionDTO jobDirectionDTO) {
+    public ApiResult<String> add(@RequestBody JobDirection jobDirection) {
         ApiResult<String> apiResult = new ApiResult<>();
-        boolean addSuccess = jobDirectionService.save(jobDirectionDTO);
+        boolean addSuccess = jobDirectionService.save(jobDirection);
         if (!addSuccess) {
             apiResult.setStatus(404);
         }

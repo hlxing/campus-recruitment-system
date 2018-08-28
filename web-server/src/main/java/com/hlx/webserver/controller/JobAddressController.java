@@ -1,6 +1,5 @@
 package com.hlx.webserver.controller;
 
-import com.hlx.webserver.model.dto.req.JobAddressDTO;
 import com.hlx.webserver.model.po.ApiResult;
 import com.hlx.webserver.model.po.JobAddress;
 import com.hlx.webserver.service.JobAddressService;
@@ -36,9 +35,9 @@ public class JobAddressController {
 
     @ApiOperation(value = "新增工作地点")
     @PostMapping("/add")
-    public ApiResult<String> add(@RequestBody JobAddressDTO jobAddressDTO) {
+    public ApiResult<String> add(@RequestBody JobAddress jobAddress) {
         ApiResult<String> apiResult = new ApiResult<>();
-        boolean addSuccess = jobAddressService.save(jobAddressDTO);
+        boolean addSuccess = jobAddressService.save(jobAddress);
         if (!addSuccess) {
             apiResult.setStatus(404);
         }

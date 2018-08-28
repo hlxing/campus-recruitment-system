@@ -1,4 +1,4 @@
-package com.hlx.webserver.model.dto.req;
+package com.hlx.webserver.model.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -10,12 +10,15 @@ import lombok.Data;
  **/
 @ApiModel(description = "工作类型")
 @Data
-public class JobTypeDTO {
+public class JobTypeAddDTO {
+
+    @ApiModelProperty(required = true, value = "方向id", example = "1")
+    private Integer directionId;
 
     @ApiModelProperty(required = true, value = "类型名称", example = "Java")
     private String name;
 
-    public JobTypeDTO() {
+    public JobTypeAddDTO() {
     }
 
 }

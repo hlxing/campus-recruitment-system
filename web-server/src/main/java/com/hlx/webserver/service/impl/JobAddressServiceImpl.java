@@ -1,7 +1,6 @@
 package com.hlx.webserver.service.impl;
 
 import com.hlx.webserver.dao.JobAddressDao;
-import com.hlx.webserver.model.dto.req.JobAddressDTO;
 import com.hlx.webserver.model.po.JobAddress;
 import com.hlx.webserver.service.JobAddressService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +23,13 @@ public class JobAddressServiceImpl implements JobAddressService{
     }
 
     @Override
-    public boolean save(JobAddressDTO jobAddressDTO) {
-        String jobAddressName = jobAddressDTO.getName();
+    public boolean save(JobAddress jobAddress) {
+        String jobAddressName = jobAddress.getName();
         boolean existTestSuccess = jobAddressDao.getByName(jobAddressName) != null;
         if (existTestSuccess) {
-            jobAddressDao.save(jobAddressName);
+            String firstLetter = jobAddress.getPhonetic().substring(0, 1).toUpperCase();
+            jobAddress.setFirstLetter(firstLetter);
+            jobAddressDao.save(jobAddress);
         }
         return false;
     }

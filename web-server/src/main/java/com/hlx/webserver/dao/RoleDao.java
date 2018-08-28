@@ -9,7 +9,6 @@ import java.util.List;
  * @description: 角色DAO
  * @author: hlx 2018-08-21
  **/
-@Repository
 public interface RoleDao {
 
     List<Role> getByUserId(Integer userId);

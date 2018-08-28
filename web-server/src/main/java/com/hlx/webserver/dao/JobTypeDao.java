@@ -9,7 +9,6 @@ import java.util.List;
  * @description: 工作类别Dao
  * @author: hlx 2018-08-26
  **/
-@Repository
 public interface JobTypeDao {
 
     void save(JobType jobType);
