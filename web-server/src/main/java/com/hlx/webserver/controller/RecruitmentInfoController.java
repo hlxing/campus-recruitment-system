@@ -1,5 +1,6 @@
 package com.hlx.webserver.controller;
 
+import com.hlx.webserver.model.dto.RecruitmentInfoAddDTO;
 import com.hlx.webserver.model.po.ApiResult;
 import com.hlx.webserver.model.po.RecruitmentInfo;
 import com.hlx.webserver.model.query.RecruitmentInfoQuery;
@@ -29,9 +30,9 @@ public class RecruitmentInfoController {
 
     @ApiOperation(value = "新增招聘信息")
     @PostMapping("/add")
-    public ApiResult<String> add(@RequestBody RecruitmentInfo recruitmentInfo) {
+    public ApiResult<String> add(@RequestBody RecruitmentInfoAddDTO addDTO) {
         ApiResult<String> apiResult = new ApiResult<>();
-        boolean addSuccess = recruitmentInfoService.save(recruitmentInfo);
+        boolean addSuccess = recruitmentInfoService.save(addDTO);
         if (!addSuccess) {
             apiResult.setStatus(404);
         }

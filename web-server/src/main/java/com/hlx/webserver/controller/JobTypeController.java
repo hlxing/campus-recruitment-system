@@ -1,8 +1,7 @@
 package com.hlx.webserver.controller;
 
-import com.hlx.webserver.model.dto.req.JobTypeDTO;
+import com.hlx.webserver.model.dto.JobTypeAddDTO;
 import com.hlx.webserver.model.po.ApiResult;
-import com.hlx.webserver.model.po.JobDirection;
 import com.hlx.webserver.model.po.JobType;
 import com.hlx.webserver.service.JobTypeService;
 import io.swagger.annotations.ApiImplicitParam;
@@ -28,12 +27,10 @@ public class JobTypeController {
     }
 
     @ApiOperation("添加某工作方向下的工作类别")
-    @ApiImplicitParam(name = "jobDirectionId", value = "工作方向id")
-    @PostMapping("/add/{jobDirectionId}")
-    public ApiResult<String> add(@PathVariable("jobDirectionId") Integer jobDirectionId,
-                                 @RequestBody JobTypeDTO jobTypeDTO) {
+    @PostMapping("/add")
+    public ApiResult<String> add(@RequestBody JobTypeAddDTO addDTO) {
         ApiResult<String> apiResult = new ApiResult<>();
-        boolean addSuccess = jobTypeService.save(jobDirectionId, jobTypeDTO);
+        boolean addSuccess = jobTypeService.save(addDTO);
         if (!addSuccess) {
             apiResult.setStatus(404);
         }

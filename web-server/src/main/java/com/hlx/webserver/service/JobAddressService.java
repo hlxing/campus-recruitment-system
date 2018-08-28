@@ -1,6 +1,5 @@
 package com.hlx.webserver.service;
 
-import com.hlx.webserver.model.dto.req.JobAddressDTO;
 import com.hlx.webserver.model.po.JobAddress;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.List;
  **/
 public interface JobAddressService {
 
-    boolean save(JobAddressDTO jobAddressDTO);
+    boolean save(JobAddress jobAddress);
 
     void deleteById(Integer id);
 

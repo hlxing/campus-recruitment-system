@@ -2,7 +2,6 @@ package com.hlx.webserver.model.po;
 
 import lombok.Data;
 import java.io.Serializable;
-import java.util.Set;
 
 /**
  * @description: 用户实体
@@ -22,12 +21,6 @@ public class User implements Serializable {
     private String password;
 
     private String sessionId;
-
-    // 角色集合
-    private Set<String> roles;
-
-    // 权限集合
-    private Set<String> permissions;
 
     public User(String name, String email, String password) {
         this.name = name;

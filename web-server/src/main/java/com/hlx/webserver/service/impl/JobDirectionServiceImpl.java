@@ -1,8 +1,7 @@
 package com.hlx.webserver.service.impl;
 
 import com.hlx.webserver.dao.JobDirectionDao;
-import com.hlx.webserver.model.dto.req.JobDirectionDTO;
-import com.hlx.webserver.model.dto.vo.JobDirectionDetailVO;
+import com.hlx.webserver.model.vo.JobDirectionDetailVO;
 import com.hlx.webserver.model.po.JobDirection;
 import com.hlx.webserver.model.po.JobType;
 import com.hlx.webserver.service.JobDirectionService;
@@ -27,11 +26,11 @@ public class JobDirectionServiceImpl implements JobDirectionService{
     }
 
     @Override
-    public boolean save(JobDirectionDTO jobDirectionDTO) {
-        String name = jobDirectionDTO.getName();
+    public boolean save(JobDirection jobDirection) {
+        String name = jobDirection.getName();
         JobDirection test = jobDirectionDao.getByName(name);
         if (test == null) {
-            jobDirectionDao.save(name);
+            jobDirectionDao.save(jobDirection);
             return true;
         }
         return false;

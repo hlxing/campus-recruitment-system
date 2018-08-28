@@ -1,4 +1,4 @@
-package com.hlx.webserver.model.dto.vo;
+package com.hlx.webserver.model.vo;
 
 import com.hlx.webserver.model.po.JobType;
 import io.swagger.annotations.ApiModel;

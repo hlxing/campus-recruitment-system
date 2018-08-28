@@ -10,10 +10,9 @@ import java.util.List;
  * @description: 工作方向Dao
  * @author: hlx 2018-08-26
  **/
-@Repository
 public interface JobDirectionDao {
 
-    void save(String name);
+    void save(JobDirection jobDirection);
 
     void deleteById(Integer jobDirectionId);
 

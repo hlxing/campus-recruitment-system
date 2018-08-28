@@ -1,6 +1,6 @@
 package com.hlx.webserver.service;
 
-import com.hlx.webserver.model.dto.req.JobTypeDTO;
+import com.hlx.webserver.model.dto.JobTypeAddDTO;
 import com.hlx.webserver.model.po.JobType;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
  **/
 public interface JobTypeService {
 
-    boolean save(Integer jobDirectionId, JobTypeDTO jobTypeDTO);
+    boolean save(JobTypeAddDTO jobTypeAddDTO);
 
     void deleteById(Integer jobTypeId);
 
