@@ -7,8 +7,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.Collection;
 
 /**
  * @description: 全局异常处理器
@@ -37,8 +41,26 @@ public class ApiExceptionResolver {
         return apiResponse;
     }
 
-    // Validation Exception异常处理(验证框架异常,参数验证失败时抛出)
-    @ExceptionHandler(value = {MethodArgumentNotValidException.class})
+
+    // Validation Exception异常处理(JavaX验证框架异常,RequestParam参数验证失败时抛出)
+    @ExceptionHandler(value = ConstraintViolationException.class)
+    @ResponseStatus(value = HttpStatus.I_AM_A_TEAPOT)
+    @ResponseBody
+    public ApiResult<String> resolveValidationException(ConstraintViolationException ex) {
+        Collection<ConstraintViolation<?>> violations = ex.getConstraintViolations();
+        for (ConstraintViolation violation : violations) {
+            String field = violation.getPropertyPath().toString().split("\\.")[1];
+            String message = violation.getMessage();
+            log.info(field + ":" +message);
+        }
+        ApiResult<String> apiResult = new ApiResult<>();
+        apiResult.setStatus(13);
+        apiResult.setText("PARAM_INVALID");
+        return apiResult;
+    }
+
+    // Validation Exception异常处理(Spring验证框架异常,RequestBody参数验证失败时抛出)
+    @ExceptionHandler(value = MethodArgumentNotValidException.class)
     @ResponseStatus(value = HttpStatus.I_AM_A_TEAPOT)
     @ResponseBody
     public ApiResult<String> resolveValidationException(MethodArgumentNotValidException ex) {
