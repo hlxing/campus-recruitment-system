@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import javax.validation.constraints.Email;
 import java.io.IOException;
 
 /**
@@ -67,8 +68,8 @@ public class UserController {
             @ApiResponse(code = 132, message = "邮箱已经存在"),
             @ApiResponse(code = 133, message = "邮箱非法"),
     })
-    @GetMapping("/emailCaptcha")
-    public ApiResult<String> mailCaptcha(@RequestParam("email") String email) {
+    @GetMapping(value = "/emailCaptcha", params = {"email"})
+    public ApiResult<String> mailCaptcha(@RequestParam("email") @Email String email) {
         ApiResult<String> apiResult = new ApiResult<>();
         userService.getEmailCaptcha(email);
         apiResult.setText("email captcha success");
