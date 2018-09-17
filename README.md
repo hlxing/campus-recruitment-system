@@ -49,3 +49,9 @@ Shiro | 权限管理 | https://shiro.apache.org/
 Modelmapper | 模型转换工具 | http://modelmapper.org/
 Redis | NoSQL数据库 | https://redis.io/
 Maven | 项目管理 | http://maven.apache.org/
+
+# 备注
+
+2018.9.17: 该项目最终将会落地某学校,作为学校的校招系统使用  
+项目的基础架构基本完成,由于某些原因近期停止开发  
+对于本项目的各种问题及疑问,欢迎提ISSUES,有空将会一一解答
